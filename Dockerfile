@@ -6,7 +6,7 @@
 # run with something like:
 #   docker run --rm -it --name feedland -p 1452:1452 -p 1462:1462 -v ./my_config.json:/project/config.json -v ./privateFiles:/project/privateFiles feedland
 # or edit compose.yml and run with docker compose up
-FROM node:22
+FROM node:22-slim
 
 WORKDIR /project
 
